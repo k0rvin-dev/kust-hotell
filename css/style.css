@@ -118,7 +118,7 @@ body{
 
 .nav-button:hover{
     transform: translateX(1px);
-    box-shadow: 0 3px 0 #ff9900;
+    box-shadow: 0 3px 0 #00f2fa;
 }
 
 h1 {
