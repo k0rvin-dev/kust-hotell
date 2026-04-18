@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Välkommen till Kust Hotell - Klicka här för att boka ditt eleganta rum med fantastisk utsikt.">
+    <title>Kust Hotell - Boka rum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <header class="header"><div class="container">
+            <img class="bakgrund" src="bilder/background.webp" alt="bakgrundsbild">
+            <nav class="nav">
+                    <button class="hammeny" aria-label="meny" aria-expanded="false" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </button>
+                    <a class="nav-button" href="index.html">Välkommen</a>
+                    <a class="nav-button" href="hitta.html">Hitta</a>
+                    <a class="nav-button" href="boka.html">Boka</a>
+                    <a class="nav-button" href="support.html">Kontakta</a>
+            </nav></div>
+            
+            <div class="logga"><img src="bilder/logga.webp" alt="logga"></div>
+        </header>
+
+        <main>
+                <h1>Vad kul att du vill boka ett rum hos oss!</h1>
+
+                <form action="tackboka.html" method="get">
+                <div class="main-boka">
+                    <div class="container-boka">
+                    <h2 class="h2-main">Bokning</h2>
+                    
+                        <label for="name">För och efternamn</label><input type="text" id="name" placeholder="För och efternamn" required>
+
+                        <label for="email">E-post</label><input type="email" id="email" placeholder="Mailadress" required>
+
+                        <label for="birthdate">Välj ett datum för bokning:</label><input type="date" id="birthdate" min="1900-01-01" max="2027-12-31" required>
+
+                        <label for="experience">Rumstyp</label>
+                         <select id="experience" required>
+                         <option value="">Välj ett alternativ</option>
+                         <option value="Aldrig">Enkel säng</option>
+                         <option value="Nybörjare">Dubbel säng</option>
+                         <option value="Medel">Suite</option>
+                         <option value="Avancerad">Penthouse</option>
+                         </select>
+
+                         <label for="ovrigt">Övrigt/Frågor</label>
+                         <textarea id="ovrigt" maxlength="1000" placeholder="Övrig information om bokningen"></textarea>
+                        <button class="submit">Skicka</button>
+                        </div></div>
+                        </form>
+
+        </main>
+        <footer>
+            <p>Kust-Hotell | Hamngatan 60 | 941 32 Piteå | <a href="tel:901130000"> 9011 30 000</a></p>
+        </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
